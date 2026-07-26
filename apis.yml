@@ -1,8 +1,26 @@
 aid: finley-concord
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/finley-concord.png
 name: Finley (Concord)
-description: 'Finley (Concord) is a company surfaced as a portfolio company of bain-capital-ventures and
-  added to the API Evangelist network as a stub for enrichment. Sector: ai-apps. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: 'Finley (Concord) is Finley Technologies, a cloud-based loan administration
+  and debt-capital-management platform for credit funds, banks, and private credit
+  operators. The software digitizes 200+ credit-agreement fields and covers loan servicing
+  (KYC, money movement, notice delivery), portfolio and borrowing-base monitoring,
+  syndicated-loan management, and backup / credit administration, plus Finley AI for
+  automating calculations, compliance checks, and notices. Finley is backed by Bain
+  Capital Ventures and is delivered as a hosted web application at app.finleycms.com
+  with product documentation at docs.finleycms.com. No public developer API, OpenAPI
+  specification, or SDK is published at this time.'
 url: https://raw.githubusercontent.com/api-evangelist/finley-concord/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Ai Apps
+- Fintech
+- Loan Servicing
+- Loan Administration
+- Debt Capital Markets
+- Private Credit
+- Portfolio Monitoring
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +47,22 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/finley-concord-domain-security.yml
 - type: Website
   url: https://www.finleycms.com/
+- type: Documentation
+  url: https://docs.finleycms.com/
+- type: Support
+  url: https://www.finleycms.com/support
+- type: Login
+  url: https://app.finleycms.com/
+- type: TermsOfService
+  url: https://cdn.prod.website-files.com/6630252fd9eb86eb14063bf2/66847b840349a7ab687ea9c8_terms-of-service.pdf
+- type: PrivacyPolicy
+  url: https://www.finleycms.com/privacy-policy
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
